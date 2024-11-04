@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gerenciador de Tarefas</h1>
+    <form id="task-form">
+        <input type="text" id="task-name" placeholder="Nome da tarefa" required>
+        <input type="text" id="due-date" placeholder="Data de conclusão (YYYY-MM-DD)" required>
+        <select id="priority">
+            <option value="alta">Alta</option>
+            <option value="media">Média</option>
+            <option value="baixa">Baixa</option>
+        </select>
+        <button type="submit">Adicionar Tarefa</button>
+    </form>
+
+    <div>
+        <button id="filter-status">Filtrar por Status</button>
+        <button id="filter-priority">Filtrar por Prioridade</button>
+    </div>
+
+    <ul id="task-list">
+        <li class="task-item">
+            <span>Tarefa exemplo</span>
+            <div class="task-actions">
+                <button class="edit">Editar</button>
+                <button class="delete">Excluir</button>
+            </div>
+        </li>
+
+        <div id="notifications"></div>
+        
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin: 8px 5px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2885a7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+div {
+    margin: 25px 0;
+    text-align: center;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 5px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-item.urgent {
+    background-color: #ffcccb;
+}
+
+/* Agrupando os botões */
+.task-item .task-actions {
+    display: flex;
+    gap: 10px; /* Espaço entre os botões */
+}
+
+button.edit,
+button.delete {
+    padding: 8px 12px;  /* Ajustando o preenchimento dos botões */
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px; /* Ajustando o tamanho da fonte */
+}
+
+button.edit {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button.edit:hover {
+    background-color: #0056b3;
+}
+
+button.delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+button.delete:hover {
+    background-color: #c82333;
+}
+
+#notifications {
+    margin-top: 10px;
+    font-weight: bold;
+    color: red;
+    text-align: left;
+}
